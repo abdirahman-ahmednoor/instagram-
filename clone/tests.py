@@ -6,7 +6,7 @@ from django.contrib.auth import login, authenticate
 # Create your tests here.
 class TestProfile(TestCase):
     def setUp(self):
-        self.user = User(username='abdirahman', email = 'abdirahman.com', password = 'Password123')
+        self.user = User(username='abdirahman', email = 'abdirahman@gmail.com', password = 'Password123')
         self.user.save()
 
         self.profile_test = Profile(id=1, name='image', profile_picture='default.jpg', bio='this is a test profile',user=self.user)

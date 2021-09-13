@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect 
+from django.shortcuts import render, redirect
 from .models import *
 from django.contrib.auth.decorators import login_required
 from django.views.generic import CreateView
@@ -8,7 +8,9 @@ from clone.models import Profile, Comment, Post
 
 from .forms import UserCreationForm, ProfileEditForm, CommentForm
 
+
 # Create your views here.
+
 @login_required(login_url='/accounts/login/')
 def index(request):
     user = request.user

@@ -21,7 +21,7 @@ To access this project on your local files, you can clone it using these steps:
 2. Povides forms tot post photos.
     | input    |     output  | 
         | :--        | :---        |
-    | account action option/form pagedisplayed   | form page displayed/new post added | 
+    | account action option/form page displayed   | form page displayed/new post added | 
 
 3. Provides search form.
     | input    |     output  | 
@@ -49,7 +49,7 @@ To access this project on your local files, you can clone it using these steps:
 3. Css
 
 ## LIVE
-View [LIVE]
+View [LIVE](https://instagram-clone12.herokuapp.com/accounts/login/?next=/)
 
 ## LICENSE
 This project is under [MIT](License) license.

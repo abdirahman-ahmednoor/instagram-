@@ -27,7 +27,7 @@ To access this project on your local files, you can clone it using these steps:
     | input    |     output  | 
       | :--        | :---        |
     | search term entered in the search field  | number of matched user result displayed in the page | 
-
+           
 4. Show photo details .
     | input    |     output  | 
       | :--        | :---        |

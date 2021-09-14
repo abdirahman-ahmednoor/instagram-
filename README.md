@@ -15,12 +15,12 @@ To access this project on your local files, you can clone it using these steps:
 ## BDD 
 1. Provides comments forms.
     | input    |     output  | 
-         | :--        | :---        |
+      | :--        | :---        |
     | comments typed in the form input   | new comments addded to the image |
 
 2. Povides forms tot post photos.
     | input    |     output  | 
-        | :--        | :---        |
+      | :--        | :---        |
     | account action option/form page displayed   | form page displayed/new post added | 
 
 3. Provides search form.

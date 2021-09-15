@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'clone',
     'bootstrap4',
+    'cloudinary',
 ]
 
 MIDDLEWARE = [
@@ -172,7 +173,7 @@ django_heroku.settings(locals())
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 cloudinary.config(
-  cloud_name = 'somken-solution-limited',
-  api_key = '844774271144255',
-  api_secret = '8sA1D1HIN1tO3NQrDGeiRdPx5Y4'
-)
+   cloud_name = 'somken-solution-limited',
+   api_key = '844774271144255',
+   api_secret = '8sA1D1HIN1tO3NQrDGeiRdPx5Y4'
+ )

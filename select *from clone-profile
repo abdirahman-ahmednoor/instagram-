@@ -1,0 +1,18 @@
+                  List of relations
+ Schema |            Name            | Type  | Owner 
+--------+----------------------------+-------+-------
+ public | auth_group                 | table | blade
+ public | auth_group_permissions     | table | blade
+ public | auth_permission            | table | blade
+ public | auth_user                  | table | blade
+ public | auth_user_groups           | table | blade
+ public | auth_user_user_permissions | table | blade
+ public | clone_comment              | table | blade
+ public | clone_post                 | table | blade
+ public | clone_profile              | table | blade
+ public | django_admin_log           | table | blade
+ public | django_content_type        | table | blade
+ public | django_migrations          | table | blade
+ public | django_session             | table | blade
+(13 rows)
+

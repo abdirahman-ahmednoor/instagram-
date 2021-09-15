@@ -8,9 +8,9 @@
 		<div class="profile">
 
 			<div class="profile-image">
-
-				<img src="{{profile.image.url}}" alt="">
-
+				{% if profile.image %}
+				<img src="{{user.profile.profile_caption}}" alt="">
+                {% endif %}
 			</div>
 
 			<div class="profile-user-settings">

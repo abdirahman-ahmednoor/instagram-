@@ -1,3 +1,4 @@
+from django.http.response import HttpResponse
 from django.shortcuts import render, redirect
 from .models import *
 from django.contrib.auth.decorators import login_required
@@ -5,7 +6,7 @@ from django.views.generic import CreateView
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib import messages
 from clone.models import Profile, Comment, Post
-
+# from django.http import  HttpResponseRedirect
 from .forms import UserCreationForm, ProfileEditForm, CommentForm
 
 
@@ -24,6 +25,7 @@ def index(request):
         "profiles": profiles,
         "user_profile":user_profile
     }
+
     return render(request, 'index.html', context)
 
 @login_required
@@ -52,13 +54,15 @@ def profile_info(request):
     if not profiles.first():
         profile = Profile.objects.create(user=request.user)
         profile.save()
-    profile = Profile.objects.get(user=request.user)
-    posts = Post.objects.filter(author=request.user)
-    context = {
-        "profile": profile,
-        "posts":posts
+        profile = Profile.objects.get(user=request.user)
+        posts = Post.objects.filter(author=request.user)
+        context = {
+           "profiles": profile,
+           "posts":posts
     }
-    return render(request, 'profile.html', context)
+
+    return render(request, 'profile.html')
+    # return HttpResponse()    
 
 
 class CommentCreateView(LoginRequiredMixin, CreateView):
